@@ -14,7 +14,7 @@
 | `beautifulsoup4` | 4.13.4          | `pip install beautifulsoup4`     |
 
 
-> ✅ 可以透過 `pip list` 或 `conda list` 查看安裝版本。
+ ✅ 可以透過 `pip list` 或 `conda list` 查看安裝版本。
 
 ---
 
@@ -40,6 +40,7 @@
 python gutenberg_crawler.py
 ```
 ---
+
 ## 📁 結果範例
 📂 目錄結構：
 ```
@@ -54,6 +55,7 @@ project_gutenberg/
 
 📹 示範影片：
 https://youtu.be/VTZ56Z876JQ
+
 ---
 
 ## 📝 其它補充
