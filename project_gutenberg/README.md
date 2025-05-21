@@ -50,8 +50,10 @@ project_gutenberg/
 ```
 📸 擷取畫面範例：
 
-📹 示範影片：
+![示範圖片](https://github.com/JohnnyHuang0515/project_gutenberg/blob/main/project_gutenberg/demo.png?raw=true)
 
+📹 示範影片：
+https://youtu.be/VTZ56Z876JQ
 ---
 
 ## 📝 其它補充
