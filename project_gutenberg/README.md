@@ -1,6 +1,6 @@
 # Project Gutenberg 中文書爬蟲 📚
 
-這個專案會自動爬取 [Project Gutenberg](https://www.gutenberg.org/browse/languages/zh) 上的**中文書籍**，儲存為純文字檔案（`.txt`），共收錄 **N 本書籍**（實際數量依網頁更新會不同）。
+這個專案會自動爬取 [Project Gutenberg](https://www.gutenberg.org/browse/languages/zh) 上的**中文書籍**，儲存為純文字檔案（`.txt`），共爬取 **354 本書籍**（實際數量依網頁更新會不同）。
 
 ---
 
