@@ -1,65 +1,65 @@
-# Project Gutenberg 中文書爬蟲 📚
+# Project Gutenberg Chinese Book Crawler 📚
 
-這個專案會自動爬取 [Project Gutenberg](https://www.gutenberg.org/browse/languages/zh) 上的**中文書籍**，儲存為純文字檔案（`.txt`），共爬取 **354 本書籍**（實際數量依網頁更新會不同）。
+This project automatically crawls Chinese books from Project Gutenberg and saves them as plain text files (.txt). A total of 354 books are fetched (the actual number may vary depending on website updates).
 
 ---
 
-## 📦 需要安裝的套件
+## 📦 Required Packages
 
-執行前，請先安裝以下套件，可用 `pip` 或 `conda` 安裝：
+Before running the script, please install the following packages using either `pip` or `conda`:
 
-| 套件名稱         | 使用版本 | 安裝指令                          |
+| Package Name     | Version | Installation Command                     |
 |------------------|--------------|-----------------------------------|
 | `requests`       | 2.32.3          | `pip install requests`           |
 | `beautifulsoup4` | 4.13.4          | `pip install beautifulsoup4`     |
 
 
- ✅ 可以透過 `pip list` 或 `conda list` 查看安裝版本。
+ ✅ You can check installed versions using `pip list` or `conda list`.
 
 ---
 
-## 🧠 程式說明
+## 🧠Program Overview
 
-本程式做了以下幾件事：
+This script performs the following tasks:
 
-1. 進入 Project Gutenberg 的中文書籍頁面
-2. 檢查書名是否為純中文（跳過英文書名）
-3. 取得書籍編號、對應的 HTML 內容頁
-4. 從頁面中取出內文（僅擷取含中文字的段落）
-5. 將每本書儲存為 `.txt` 純文字檔，放在 `project_gutenberg/` 資料夾中
+1. Accesses the Chinese book page on Project Gutenberg
+2. Checks if the book title is purely in Chinese (skips English titles)
+3. Retrieves the book ID and corresponding HTML content page
+4. Extracts content from the page (only paragraphs containing Chinese characters)
+5. Saves each book as a `.txt` file in the `project_gutenberg/` folder
 
 ---
 
-## ▶️ 如何執行
+## ▶️ How to Run
 
-1. 確保你安裝好 Python 3.6+
-2. 將此檔案命名為 `gutenberg_crawler.py`
-3. 終端機中執行：
+1. Make sure you have Python 3.6+ installed
+2. Save this file as `gutenberg_crawler.py`
+3. Run the script in the terminal:
 
 ```bash
 python gutenberg_crawler.py
 ```
 ---
 
-## 📁 結果範例
-📂 目錄結構：
+## 📁 Sample Output
+📂 Folder structure:
 ```
 project_gutenberg/
 ├── 三國演義.txt
 ├── 紅樓夢.txt
 └── 儒林外史.txt
 ```
-📸 擷取畫面範例：
+📸 Screenshot example:
 
 ![示範圖片](https://github.com/JohnnyHuang0515/project_gutenberg/blob/main/project_gutenberg/images/demo.png?raw=true)
 
-📹 示範影片：
+📹 Demo video:
 https://youtu.be/VTZ56Z876JQ
 
 ---
 
-## 📝 其它補充
-* 預設會跳過英文書名，僅保存純中文書
-* 延遲時間為 0.5~2 秒之間隨機，以降低被封鎖風險
+## 📝 Additional Notes
+* By default, books with English titles are skipped; only pure Chinese books are saved
+* A random delay between 0.5 to 2 seconds is added to reduce the risk of being blocked
 
 ---
